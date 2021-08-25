@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row p-3">
+            <!-- Navbar section start -->
+            <div class="col">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Inventory System</a>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Welcome : <span class="user-name">Admin</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Logout </a></li>
+                        </ul>
+                       
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-2 bg-light">
+                <ul class="nav flex-column sidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Item</a></li>
+                    <li class="nav-item"><a class="nav-link" href="purchase.html">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vendor.html">Vendor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customer.html">Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="search.html">Search</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-9 offset-1 bg-light">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Add Item</button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">All Item</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <form action="/action_page.php">
+                           <div class="row pt-4">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="email">Item Name:</label>
+                                    <input type="text" class="form-control" id="name">
+                                  </div>
+                               </div>
+                               <div class="col-6">
+                                <div class="form-group">
+                                    <label for="item-number">Item Number:</label>
+                                    <input type="text" class="form-control" id="item-number">
+                                  </div>
+                               </div>
+                           </div>
+                           <div class="row pt-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="quantity">Quantity:</label>
+                                    <input type="text" class="form-control" id="quantity">
+                                  </div>
+                               </div>
+                               <div class="col-6">
+                                <div class="form-group">
+                                    <label for="price">Price:</label>
+                                    <input type="text" class="form-control" id="price">
+                                  </div>
+                               </div>
+                           </div>
+                           <div class="row pt-3">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="description" class="col-12">Description:</label>
+                                    <textarea cols="96" rows="3" class="form-control"></textarea>
+                                  </div>
+                               </div>
+                               
+                           </div>
+                            <div class="row p-3">
+                                <div class="col-12"><a href="index.html"><input type="input" class="btn btn-primary" value="Add Item"></a></div>
+                            </div>
+                          </form> 
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Sr</th>
+                                  <th scope="col">Item No#</th>
+                                  <th scope="col">Item Name</th>
+                                  <th scope="col">Quantity</th>
+                                  <th scope="col">Price</th>
+                                  <th scope="col" colspan="2">Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>AFE-00001</td>
+                                  <td>PopKon</td>
+                                  <td>50</td>
+                                  <td>145</td>
+                                  <td>
+                                      <a href="#" class="btn btn-info">Edit</a>
+                                      <a href="#" class="btn btn-danger">Delete</a>
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                    </div>
+                  </div>
+                   
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>

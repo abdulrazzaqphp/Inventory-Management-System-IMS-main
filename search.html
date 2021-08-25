@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row p-3">
+            <!-- Navbar section start -->
+            <div class="col">
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Inventory System</a>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Welcome : <span
+                                        class="user-name">Admin</span></a></li>
+                                        <li class="nav-item"><a class="nav-link" href="login.html">Logout </a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col-2 bg-light">
+                <ul class="nav flex-column sidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Item</a></li>
+                    <li class="nav-item"><a class="nav-link" href="purchase.html">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vendor.html">Vendor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customer.html">Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="search.html">Search</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-9 offset-1 bg-light">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-items-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-items" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Item</button>
+                        <button class="nav-link" id="nav-customer-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-customer" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Customer</button>
+                        <button class="nav-link" id="nav-sale-tab" data-bs-toggle="tab" data-bs-target="#nav-sale"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sale</button>
+                        <button class="nav-link" id="nav-purchase-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-purchase" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Purchase</button>
+                        <button class="nav-link" id="nav-vendor-tab" data-bs-toggle="tab" data-bs-target="#nav-vendor"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Vendor</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-items" role="tabpanel"
+                        aria-labelledby="nav-items-tab">
+                        <div class="row p-3">
+                            <div class="col-8">Hello</div>
+                            <div class="col-4">
+                                <form class="form-inline md-form mr-auto">
+                                    <input class="form-control col-4" type="text" placeholder="Search" aria-label="Search">
+                                  </form>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Item No#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-end" style="margin:20px 0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-customer" role="tabpanel" aria-labelledby="nav-customer-tab">
+                        <div class="row p-3">
+                            <div class="col-8">Hello</div>
+                            <div class="col-4">
+                                <form class="form-inline md-form mr-auto">
+                                    <input class="form-control col-4" type="text" placeholder="Search" aria-label="Search">
+                                  </form>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Item No#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-end" style="margin:20px 0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-sale" role="tabpanel" aria-labelledby="nav-sale-tab">
+                        <div class="row p-3">
+                            <div class="col-8">Hello</div>
+                            <div class="col-4">
+                                <form class="form-inline md-form mr-auto">
+                                    <input class="form-control col-4" type="text" placeholder="Search" aria-label="Search">
+                                  </form>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Item No#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-end" style="margin:20px 0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
+                        <div class="row p-3">
+                            <div class="col-8">Hello</div>
+                            <div class="col-4">
+                                <form class="form-inline md-form mr-auto">
+                                    <input class="form-control col-4" type="text" placeholder="Search" aria-label="Search">
+                                  </form>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Item No#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-end" style="margin:20px 0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
+                        <div class="row p-3">
+                            <div class="col-8">Hello</div>
+                            <div class="col-4">
+                                <form class="form-inline md-form mr-auto">
+                                    <input class="form-control col-4" type="text" placeholder="Search" aria-label="Search">
+                                  </form>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Item No#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-end" style="margin:20px 0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-vendor" role="tabpanel" aria-labelledby="nav-vendor-tab">
+                        <div class="row p-3">
+                            <div class="col-8">Hello</div>
+                            <div class="col-4">
+                                <form class="form-inline md-form mr-auto">
+                                    <input class="form-control col-4" type="text" placeholder="Search" aria-label="Search">
+                                  </form>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sr</th>
+                                    <th scope="col">Item No#</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col" colspan="2">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>AFE-00001</td>
+                                    <td>PopKon</td>
+                                    <td>50</td>
+                                    <td>145</td>
+                                    <td>
+                                        <a href="#" class="btn btn-info">Edit</a>
+                                        <a href="#" class="btn btn-danger">Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="pagination justify-content-end" style="margin:20px 0">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
